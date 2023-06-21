@@ -1,11 +1,10 @@
 import React from "react";
-import Logo from "../assets/logo.svg";
 const Header = () => {
   return (
     <header className="header">
       <nav className="nav-bar">
         <div className="logo">
-          <h2><img src={Logo} alt="" width={"6%"}/>Arun</h2>
+          <h2 className="header-logo">Arun</h2>
         </div>
         <ul>
           <li>
