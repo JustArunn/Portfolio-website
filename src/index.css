@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    text-decoration: none;
+    overflow-x: hidden;
+  }
+  :root {
+    --primary-color: #1d4ce8;
+    --bg-color: #1f1f1f;
+    --text-color: #fff;
+    --heart-color: #c51919;
+  }
+  
+  .wrapper {
+    width: 100vw;
+    background-color: var(--bg-color);
+  }
+  body{
+    background-color: var(--bg-color);
+  }
+  /****************************************** Header Section  ***********************************************/
+  header {
+    width: 100vw;
+  }
+  .nav-bar {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+  header nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  header nav ul li {
+    list-style-type: none;
+    padding: 1.2rem 0.3rem;
+  }
+  
+  header nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  /****************************************** Header Section end  *******************************************/
+  
+  /****************************************** Hero Section  *************************************************/
+  .hero-section {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .hero-image {
+    width: 34%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .btn-chat {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .btn-chat:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.3s;
+  }
+  /****************************************** Hero Section end **********************************************/
+  
+  /****************************************** About Section end *********************************************/
+  
+  .about-section {
+    margin-top: 1rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .text-about {
+    text-decoration: underline var(--primary-color);
+    font-size: 2rem;
+  }
+  .about-description {
+    width: 50%;
+    margin-top: 2rem;
+  }
+  
+  .projects-section {
+    text-align: center;
+  }
+  
+  .project-heading {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .project-image img {
+    border-radius: 1rem;
+  }
+  
+  .btn-live-link {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .btn-live-link:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.3s;
+  }
+  
+  /****************************************** About Section end *******************************************/
+  
+  /****************************************** Contact Section **********************************************/
+  
+  .contact-section {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+    text-decoration: underline var(--primary-color);
+  }
+  .socials-items {
+    display: flex;
+    gap: 2rem;
+  }
+  .socials-items li {
+    padding: 1rem 1.4rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+  }
+  .socials-items li:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.3s;
+  }
+  
+  .btn-resume {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-resume:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.3s;
+  }
+  /******************************************* Contact Section end ******************************************/
+  
+  /******************************************* Footer Section ***********************************************/
+  .footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .text-copy {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-mark {
+    margin-bottom: 1rem;
+  }
+  
+  .heart {
+    color: var(--heart-color);
+  }
+  
+  /******************************************* Mobile Phone *************************************************/
+  @media (max-width: 450px) {
+    /* Nav Section */
+    nav {
+      border-radius: 1rem;
+      height: 3.5rem;
+      position: fixed;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    /* Hero Section */
+    .hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      border-radius: 1rem;
+      border: 4px solid var(--primary-color);
+    }
+    .intro {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .btn-chat {
+      padding: 0.8rem 1.5rem;
+      background-color: var(--primary-color);
+      border-radius: 0.4rem;
+      border: none;
+      margin-top: 0.5rem;
+    }
+    .hero-image {
+      width: 70%;
+      margin-top: 2rem;
+    }
+  
+    /* About Me Section */
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 1rem;
+      margin-top: 0.4rem;
+      border: 4px solid var(--primary-color);
+    }
+    .text-about {
+      margin-top: 3rem;
+      text-decoration: underline var(--primary-color);
+    }
+    .about-description {
+      padding-left: 1.3rem;
+    }
+    .projects-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .project-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 1rem;
+    }
+  
+    .project-image img {
+      border-radius: 0.4rem;
+    }
+  
+    .btn-live-link {
+      padding: 0.5rem 1rem;
+      background-color: var(--primary-color);
+      border-radius: 0.4rem;
+      border: none;
+      margin-top: 0.6rem;
+    }
+  
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 1rem;
+      margin-top: 0.3rem;
+      border: 4px solid var(--primary-color);
+    }
+    .contact-section h2 {
+      margin-top: 4rem;
+      text-decoration: underline var(--primary-color);
+    }
+    .socials-links {
+      width: 350px;
+    }
+    .socials-items {
+      display: flex;
+      padding: 1rem 2rem;
+      flex-direction: column;
+      gap: 0rem;
+    }
+    .socials-items li {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .socials-items li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-resume {
+      padding: 1rem 2rem;
+      background-color: var(--primary-color);
+      border-radius: 0.4rem;
+      border: none;
+      margin-bottom: 1rem;
+    }
+  
+    /* Footer Section */
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 1rem;
+      margin-top: 0.3rem;
+      background-color: black;
+      border: 4px solid var(--primary-color);
+    }
+    .footer p {
+      margin-top: 1rem;
+    }
+    .heart {
+      color: #c50b0b;
+    }
+  
+    .sec-ch {
+      margin-bottom: 1rem;
+    }
+  }
+  
