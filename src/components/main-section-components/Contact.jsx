@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../../assets/Arun-resume.pdf"
+import Resume from "../../assets/Arun-resume.pdf";
 const Contact = () => {
   return (
     <div className="contact-section" id="contact">
@@ -7,24 +7,25 @@ const Contact = () => {
 
       <div className="socials-links">
         <ul className="socials-items">
-          <li>
-            <a href="https://github.com/JustArunn">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/dev-arunn/">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/just.arunn/">Instagram</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100092980794827">
-              FaceBook
-            </a>
-          </li>
+          <a className="btn" href="https://github.com/JustArunn">
+            GitHub
+          </a>
+          <a className="btn" href="https://www.linkedin.com/in/dev-arunn/">
+            LinkedIn
+          </a>
+          <a className="btn" href="https://www.instagram.com/just.arunn/">
+            Instagram
+          </a>
+          <a
+            className="btn"
+            href="https://www.facebook.com/profile.php?id=100092980794827"
+          >
+            FaceBook
+          </a>
         </ul>
       </div>
       <div className="resume-download">
-        <button className="btn-resume">
+        <button className="btn-resume btn">
           <a href={Resume} download="Arun's resume">
             Resume
           </a>
